@@ -2,41 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Digital Legacy App Design System - Professional, Trustworthy, Secure
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Trust & Security */
+    --background: 220 20% 97%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep Trustworthy Blue */
+    --primary: 215 45% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 215 45% 35%;
+    --primary-lighter: 215 45% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm Professional Gray */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Trust/Security Accent - Teal */
+    --trust: 185 40% 35%;
+    --trust-foreground: 0 0% 100%;
+    --trust-light: 185 40% 85%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Legacy/Warmth Accent - Amber */
+    --legacy: 45 85% 55%;
+    --legacy-foreground: 215 25% 15%;
+    --legacy-light: 45 85% 92%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 90%;
+
+    --warning: 35 91% 50%;
+    --warning-foreground: 215 25% 15%;
+    --warning-light: 35 91% 90%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 220 15% 94%;
+    --accent-foreground: 215 25% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 215 45% 25%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-trust: linear-gradient(135deg, hsl(var(--trust)), hsl(185 40% 45%));
+    --gradient-legacy: linear-gradient(135deg, hsl(var(--legacy)), hsl(45 85% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--trust)) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 12px -4px hsl(var(--primary) / 0.1);
+    --shadow-primary: 0 8px 25px -8px hsl(var(--primary) / 0.3);
+    --shadow-trust: 0 8px 25px -8px hsl(var(--trust) / 0.25);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
