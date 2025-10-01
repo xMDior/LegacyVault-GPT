@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Users, Clock, Heart, Lock, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { supabase } from "../lib/supabaseClient";
 
 const LandingPage = () => {
   return (
@@ -13,7 +14,9 @@ const LandingPage = () => {
           <span className="text-2xl font-bold text-primary">LegacyVault</span>
         </div>
         <div className="flex gap-4">
-          <Button variant="ghost">Sign In</Button>
+          <Button variant="ghost" asChild>
+            <Link to="/auth">Sign In</Link>
+          </Button>
           <Button variant="primary" asChild>
             <Link to="/dashboard">Get Started</Link>
           </Button>
